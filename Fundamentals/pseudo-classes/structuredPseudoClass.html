@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Structured Pseudo Classes</title>
+  <style>
+    /* span:first-of-type {
+      color: red;
+    }
+
+    span:nth-child(2n + 1){
+      color: red;
+    } */
+
+    /* span:nth-of-type(2n + 1) {
+      color: red;
+    } */
+
+    span:nth-last-of-type(2n + 1) {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div>Div</div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <div>Div</div>
+  </div>
+  <div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+  </div>
+</body>
+</html>

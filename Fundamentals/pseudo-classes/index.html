@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pseudo Classes</title>
+</head>
+  <style>
+    .submit:hover {
+      background-color: red;
+    }
+
+    .submit:focus {
+      background-color: blue;
+    }
+
+    .name:hover {
+      background-color: green;
+    }
+
+    /* the following code is executed if email is disabled */
+    .email:disabled {
+      background-color: purple;
+    }
+
+    /* the following code is executed is name is required */
+    .name:required {
+      background-color: blue;
+    }
+
+  </style>
+<body>
+  <div>
+    <label>Email</label>
+    <input type="email" class="email" disabled>
+  </div>
+  <div>
+    <label>My Name Is</label>
+    <input type="text" class="name" required>
+  </div>
+  <button type="submit" class="submit">Send</button>
+</body>
+</html>

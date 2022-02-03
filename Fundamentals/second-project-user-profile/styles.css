@@ -1,0 +1,20 @@
+.header-text {
+  text-align: center;
+}
+
+.green-section {
+  background-color: green;
+  color: white
+}
+
+.cyan-text {
+  color: cyan;
+}
+
+.line-through-text {
+  text-decoration: line-through;
+}
+
+.title-font {
+  font-family: 'Trebuchet MS';
+}
