@@ -2,8 +2,64 @@
 <html lang="en">
 <head>
   <title>Grid</title>
+  <style>
+
+    .item {
+      border: 1px solid #333;
+      background-color: #777;
+      color: yellow;
+    }
+
+    .container {
+      display: grid;
+      grid-auto-flow: row dense; /* dense keyword forces grid to fill empty areas */
+      grid-template-columns: repeat(3, 100px);
+      /* grid-template-columns: 50px repeat(2, 1fr) 50px; */
+      grid-template-rows: minmax(50px, auto) 100px;
+      gap: 15px;
+      /* row-gap: 10px;
+      column-gap: 10px; */
+      /* justify-content: center; */
+      /* align-content: center; */
+      /* align-items: start; */ /* default is set to stretch */
+      /* justify-items: center; */ /* default is set to stretch */
+
+      /* period denotes that anything can go in that section*/
+      /* grid-template-areas: 
+        "header header header"
+        "sidebar content ." 
+        "sidebar content .";
+        */
+      } 
+
+    .item1 {
+      grid-column: span 2; /* will span 2 columns */
+      /* grid-area: content; */
+    }
+
+    .item2 {
+      grid-column: span 2;
+      /* align-self: center; */
+      /* justify-self: start; */
+      /* grid-area: header; */
+    }
+
+    .item3 {
+      /* grid-area: sidebar; */
+    }
+
+  </style>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="item item1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut fugiat, error tenetur iste enim mollitia magnam. Molestiae possimus ab blanditiis.</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+    <div class="item item7">7</div>
+    <div class="item item8">8</div>
+  </div>
 </body>
 </html>
